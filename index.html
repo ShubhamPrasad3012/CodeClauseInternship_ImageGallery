@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dynamic Image Gallery</h1>
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="nature">Nature</button>
+      <button data-filter="people">People</button>
+      <button data-filter="technology">Technology</button>
+    </div>
+  </header>
+  <main>
+    <div class="gallery">
+      <div class="image-card" data-category="nature">
+        <img src="nature1.jpeg" alt="Nature Image 1">
+      </div>
+      <div class="image-card" data-category="nature">
+        <img src="nature2.jpeg" alt="Nature Image 2">
+      </div>
+      <div class="image-card" data-category="people">
+        <img src="people1.jpeg" alt="People Image 1">
+      </div>
+      <div class="image-card" data-category="people">
+        <img src="people2.jpeg" alt="People Image 2">
+      </div>
+      <div class="image-card" data-category="technology">
+        <img src="tech1.jpeg" alt="Technology Image 1">
+      </div>
+      <div class="image-card" data-category="technology">
+        <img src="tech2.jpeg" alt="Technology Image 2">
+      </div>
+      <div class="image-card" data-category="nature">
+        <img src="nature3.jpeg" alt="Nature Image 3">
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
