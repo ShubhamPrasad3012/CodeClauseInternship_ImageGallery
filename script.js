@@ -11,9 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       imageCards.forEach(card => {
         if (filterValue === "all" || card.dataset.category === filterValue) {
+          card.style.opacity = "1";
+          card.style.pointerEvents = "auto";
+          card.style.transform = "scale(1)";
           card.style.display = "block";
         } else {
-          card.style.display = "none";
+          card.style.opacity = "0";
+          card.style.pointerEvents = "none";
+          card.style.transform = "scale(0.95)";
+          setTimeout(() => (card.style.display = "none"), 300);
         }
       });
     });
